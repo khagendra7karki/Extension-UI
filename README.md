@@ -6,7 +6,7 @@
 
 #### Dependencies
 - react-router-dom: for navigation
-- Momemnt: for fromatting dates
+- moment: for fromatting dates
 
 #### Build direction
 ```
@@ -24,4 +24,8 @@ npm run build
 **Password:** david108
 
 #### Demo Video
-[![Watch the demo video](thumbnail.png)](demo.mp4)
+
+<div align = 'center'>
+    <img src = 'demo.gif' width = '600px'>
+</div>
+
