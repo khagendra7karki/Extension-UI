@@ -1,0 +1,23 @@
+.someGroupWrapper{
+    background-color: var(--color-secondary-dark);
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* position: relative; */
+}
+.home::-webkit-scrollbar{
+    display: none;
+}
+.someGroupText{
+    margin: 0px;
+    color: var(--text-color-faded-white);
+}
+.groupIcon{
+    margin-right: 8px;
+    color: var(--text-color-faded-white);
+}

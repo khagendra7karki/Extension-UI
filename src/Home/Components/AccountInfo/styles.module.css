@@ -1,0 +1,29 @@
+.accountInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+}
+.accountNumber{
+    font-size: 14px;
+    margin: 0;
+}
+.copyIcon{
+    margin-left:10px;
+    color: var(--text-color-faded-white);
+    transition: 0.3s ease-in-out;
+}
+.copyIcon:hover{
+    cursor: pointer;
+    color: var(--text-color-white);
+}
+.walletName{
+    margin: 12px;
+    font-weight: 500;
+    color: var(--text-color-faded-white);
+}
+
+.accountNumberWrapper{
+    display: flex;
+    align-items: center;
+}

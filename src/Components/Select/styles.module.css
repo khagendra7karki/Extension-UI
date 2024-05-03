@@ -1,0 +1,76 @@
+.customSelect {
+  position: relative;
+  font-size: 14px;
+}
+/* .customSelect select {
+  display: none; 
+} */
+.selectSelected {
+  border: 1px solid rgba(255, 255, 255, 0.309);
+  border-radius: 18px;
+}
+.selectSelected::before, .selectSelected::after{
+  content: "";
+  height: 1px;
+  width: 6px;
+  left: 14px;
+  top: calc(50% - 3px );
+  background-color: var(--text-color-faded-white);
+  position: absolute;
+  transform-origin: 0% 0%;
+  transform: rotate(54deg);
+  transition: 0.3s ease-in-out;
+}
+
+.selectSelected::after{
+  transform-origin: 100% 0%;
+  transform: rotate(-54deg);
+}
+.selectSelected.selectArrowActive:before, .selectSelected.selectArrowActive:after {
+  top: calc(50%  );
+
+}
+.selectSelected.selectArrowActive:before {
+  transform-origin: 0% 100%;
+  transform: rotate(-54deg);
+
+}
+.selectSelected.selectArrowActive:after {
+  transform-origin: 100% 100%;
+  transform: rotate(54deg);
+}
+.selectItems div,.selectSelected {
+  color: #ffffff;
+  padding: 8px 14px 8px 30px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+}
+.selectItems div{
+  font-size: 12px;
+}
+.selectItems {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.selectHide {
+  display: none;
+}
+.selectItems div:hover, .sameAsSelected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.selectItem {
+  color: #ffffff;
+  padding: 8px 14px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+.selectItem:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

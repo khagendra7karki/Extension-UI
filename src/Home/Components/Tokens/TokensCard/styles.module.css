@@ -1,0 +1,18 @@
+.cardWrapper{
+    display: flex;
+    background-color: var(--color-secondary-dark);
+    border-radius: 4px;
+    padding: 16px 20px;
+}
+.token, .balance, .currency{
+    margin: 6px;
+}
+.token{
+    color: var(--text-color-faded-white)
+}
+.balance{
+    margin-left: auto;
+}
+.currency{
+    color: var(--text-color-faded-white)
+}

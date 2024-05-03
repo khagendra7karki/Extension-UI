@@ -1,0 +1,7 @@
+@import '../../variables.css';
+
+.footerText{
+    text-align: center;
+    color: var(--text-color-faded-white);
+    font-size: 11px;
+}

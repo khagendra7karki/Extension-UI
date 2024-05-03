@@ -1,0 +1,87 @@
+.navigationWrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+}
+.navigationWrapper.show{
+    transform: translateX(0);
+}
+.menuIcon{
+    padding: 6px;
+    color: var(--text-color-faded-white);
+    transition: 0.2s ease-in-out;
+}
+.menuIcon:hover{
+    cursor: pointer;
+    color: var(--text-color-white);
+}
+.overlay{
+    width: 30%;
+    /* height: 600px; */
+    height: 100%;
+}
+
+.navigation{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background-color: var(--color-secondary-dark);
+    padding: 24px;
+}
+.crossMark{
+    margin-left: auto;
+    color: var(--text-color-faded-white);
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.crossMark:hover{
+    cursor: pointer;
+    color: var(--text-color-white);
+}
+.navigation ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 48px;
+    flex-direction: column-reverse;
+    gap: 24px;
+}
+.links{
+    text-decoration: none;
+    color: var(--text-color-faded-white);
+    transition: 0.3s ease-in-out;
+}
+.links:hover{
+    color: var(--text-color-white);
+}
+
+.logoutButton{
+    outline: none;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    gap: 6px;
+    font-size: 16px;
+    text-align: right;
+    margin-top: auto;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.logoutButton:hover{
+    cursor: pointer;
+}
+.logoutButton:hover .textFaded{
+    color: var(--text-color-white);
+}
+.textFaded{
+    color: var(--text-color-faded-white);
+}
