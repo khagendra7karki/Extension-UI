@@ -28,6 +28,7 @@ const CustomSelect: React.FC<Props> = ({ options, value, onChange, sx, placehold
     onChange(option.value);
     setIsOpen(false);
   };
+
   const handleDocumentClick = (event: MouseEvent) => {
     if (!selectedOptionRef.current?.contains(event.target as Node)) {
       setIsOpen(false);
